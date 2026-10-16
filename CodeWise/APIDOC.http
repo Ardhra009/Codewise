@@ -1,0 +1,39 @@
+###
+GET http://127.0.0.1:8000/questions/
+Accept: application/json
+
+###
+POST http://127.0.0.1:8000/addquestions/
+Content-Type: application/json
+
+{
+    "title": "difference of n digits",
+    "language": "python",
+    "difficulty_level": "easy",
+    "topic": "math",
+    "notes": "Calculate the difference of digits of  number.",
+    "sample_input": "32",
+    "sample_output": "1"
+}
+
+###
+GET http://127.0.0.1:8000/questions/2/
+Accept: application/json
+
+###
+PUT http://127.0.0.1:8000/questions/2/
+Content-Type: application/json
+
+{
+    "title": "square of a number",
+    "language": "python",
+    "difficulty_level": "easy",
+    "topic": "math",
+    "notes": "Calculate the square of a number.",
+    "sample_input": "3",
+    "sample_output": "9"
+} 
+
+###
+DELETE  http://127.0.0.1:8000/questions/2/
+Accept: application/json
